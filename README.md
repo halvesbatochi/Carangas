@@ -26,7 +26,8 @@ REST é uma abstração da arquitetura WWW (World Wide Web) que tem como objetiv
    > @escaping nos parâmetros assegura que os sistema reterá o parâmetro/closure para execução após o método ter sido encerrado.
 
 ```swift
-//Utilizado @scaping para a closure ser "segurada" e poder ser executada mesmo após a conclusão do método.
+// Utilizado @scaping para a closure ser "segurada" e poder ser 
+// executada mesmo após a conclusão do método.
 class func save(car: Car, onComplete: @escaping (Bool) -> Void) {
     applyOperation(car: car, operation: .save, onComplete: onComplete)
 }
